@@ -44,31 +44,31 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.homepage_nav:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, HomeFragment.class,null).commit();
                 break;
 
             case R.id.character_pick:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CharacterFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, CharacterFragment.class,null).commit();
                 break;
 
             case R.id.ambience_nav:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AmbienceFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, AmbienceFragment.class,null).commit();
                 break;
 
             case R.id.to_do_list:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new TodolistFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, TodolistFragment.class,null).commit();
                 break;
 
             case R.id.database_nav:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ProgressFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, ProgressFragment.class,null).commit();
                 break;
 
             case R.id.settings_nav:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, SettingsFragment.class,null).commit();
                 break;
 
             case R.id.tutorial_nav:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new TutorialFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, TutorialFragment.class,null).commit();
                 break;
 
             case R.id.logout_nav:
